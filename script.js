@@ -4,6 +4,19 @@ const header = document.querySelector('.site-header');
 const backToTop = document.querySelector('.back-to-top');
 const navLinks = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('main section[id]');
+const videos = document.querySelectorAll('video');
+
+videos.forEach((video) => {
+  video.setAttribute('autoplay', '');
+  video.setAttribute('muted', '');
+  video.setAttribute('loop', '');
+  video.setAttribute('playsinline', '');
+  video.setAttribute('preload', 'auto');
+  video.defaultMuted = true;
+  video.muted = true;
+  video.playsInline = true;
+  video.play().catch(() => {});
+});
 
 menuToggle.addEventListener('click', () => {
   nav.classList.toggle('nav--open');
