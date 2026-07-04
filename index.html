@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew Haven Coffee - premium specialty coffee with a refined atmosphere, handcrafted beverages, and modern caf�� service.">
+  <title>Brew Haven Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" aria-label="Brew Haven Coffee">
+        <img class="brand__mark" src="images/logo.svg" alt="Brew Haven Coffee Logo">
+        <div class="brand__copy">
+          <span class="brand__label">Brew Haven Coffee</span>
+          <h1>Modern specialty coffee</h1>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a class="nav__link active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#featured">Products</a>
+        <a class="nav__link" href="#gallery">Gallery</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero__media">
+        <img src="images/hero.jpg" alt="Premium coffee shop interior" loading="lazy">
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__panel container">
+        <span class="eyebrow">Calm. Crafted. Coffee.</span>
+        <h2>Elevated coffee rituals for modern life.</h2>
+        <p>Experience refined specialty coffee in a quiet, elegant space with handcrafted drinks, premium beans, and thoughtful service.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#featured">Explore the menu</a>
+          <a class="btn btn--secondary" href="#contact">Book a table</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-image about-animate-left">
+          <video autoplay muted playsinline preload="auto" aria-label="Cinematic coffee preparation video" data-playlist="videos/about-coffee-prep-sequence.mp4|videos/about-coffee-cinematic.mp4">
+            <source src="videos/about-coffee-prep-sequence.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="about-copy about-animate-right">
+          <span class="section__eyebrow">ABOUT BREW HAVEN</span>
+          <h2>A quiet coffee house built around craft, calm, and clarity.</h2>
+          <p>We source beans with intention, brew with patience, and create a calm space for modern coffee rituals. Brew Haven Coffee is designed to feel thoughtful, refined, and welcoming.</p>
+          <div class="about-features">
+            <div class="feature-row about-feature-animate">
+              <i class="fa-solid fa-seedling feature-icon" aria-hidden="true"></i>
+              <div>
+                <h3>Thoughtful sourcing</h3>
+                <p>Single-origin beans selected for clarity and depth.</p>
+              </div>
+            </div>
+            <div class="feature-row about-feature-animate">
+              <i class="fa-solid fa-mug-hot feature-icon" aria-hidden="true"></i>
+              <div>
+                <h3>Artful brewing</h3>
+                <p>Precision preparation that highlights each coffee's character.</p>
+              </div>
+            </div>
+            <div class="feature-row about-feature-animate">
+              <i class="fa-solid fa-couch feature-icon" aria-hidden="true"></i>
+              <div>
+                <h3>Minimal space</h3>
+                <p>Elegant interiors designed to feel calm, comfortable, and uncluttered.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section featured">
+      <div class="container section-header featured-header">
+        <span class="section__eyebrow">PRODUCTS</span>
+        <h2>Crafted Drinks & Cafe Favorites</h2>
+        <p class="section__desc">A curated selection of specialty drinks, fresh pastries, and cafe favorites prepared with care.</p>
+      </div>
+
+      <div class="container">
+        <div class="coffee-grid container">
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-espresso.jpg" alt="Single origin espresso in a white cup" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Espresso</p>
+              <h3>Single Origin Espresso</h3>
+              <p class="muted">A concentrated shot with rich crema, bright sweetness, and a clean finish.</p>
+              <div class="coffee-card__footer"><span class="price">RM 8.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-oat-latte.jpg" alt="Oat milk latte with latte art" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Latte</p>
+              <h3>Oat Milk Latte</h3>
+              <p class="muted">Smooth espresso folded into creamy oat milk with a soft, balanced texture.</p>
+              <div class="coffee-card__footer"><span class="price">RM 12.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-iced-latte.jpg" alt="Iced latte in a tall glass" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Iced</p>
+              <h3>Iced Latte</h3>
+              <p class="muted">Chilled milk and espresso over ice for a crisp, refreshing cafe classic.</p>
+              <div class="coffee-card__footer"><span class="price">RM 12.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-cappuccino.jpg" alt="Classic cappuccino with foam art" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Cappuccino</p>
+              <h3>Classic Cappuccino</h3>
+              <p class="muted">Espresso, steamed milk, and a velvety foam cap in a balanced cup.</p>
+              <div class="coffee-card__footer"><span class="price">RM 10.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-caramel-macchiato.jpg" alt="Caramel macchiato style coffee drink" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Specialty</p>
+              <h3>Caramel Macchiato</h3>
+              <p class="muted">Layered espresso and milk finished with a warm caramel sweetness.</p>
+              <div class="coffee-card__footer"><span class="price">RM 15.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-matcha-latte.jpg" alt="Green matcha latte with foam art" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Matcha</p>
+              <h3>Matcha Latte</h3>
+              <p class="muted">Ceremonial-style matcha blended with milk for a smooth earthy cup.</p>
+              <div class="coffee-card__footer"><span class="price">RM 13.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-cold-brew.jpg" alt="Cold brew coffee over ice" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Cold Brew</p>
+              <h3>Cold Brew</h3>
+              <p class="muted">Slow-steeped coffee served chilled with a deep, smooth profile.</p>
+              <div class="coffee-card__footer"><span class="price">RM 11.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-croissant.jpg" alt="Golden croissant on a cafe table" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Pastry</p>
+              <h3>Croissant</h3>
+              <p class="muted">Buttery, flaky pastry baked golden for a simple cafe pairing.</p>
+              <div class="coffee-card__footer"><span class="price">RM 8.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-chocolate-cake.jpg" alt="Chocolate cake with ganache frosting" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Dessert</p>
+              <h3>Chocolate Cake</h3>
+              <p class="muted">Rich chocolate layers with a smooth finish for slow afternoon moments.</p>
+              <div class="coffee-card__footer"><span class="price">RM 15.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+
+          <article class="coffee-card card-animate">
+            <div class="card-media"><img src="images/product-brunch-sandwich.jpg" alt="Toasted brunch sandwich on a plate" loading="lazy"></div>
+            <div class="coffee-card__content">
+              <p class="coffee-card__label">Brunch</p>
+              <h3>Brunch Sandwich</h3>
+              <p class="muted">Toasted bread with a savory filling, prepared for a relaxed cafe lunch.</p>
+              <div class="coffee-card__footer"><span class="price">RM 18.90</span><a class="btn btn--minimal" href="#contact">Order Now</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container gallery-intro">
+        <span class="section__eyebrow">OUR GALLERY</span>
+        <h2>Premium coffee moments, quietly composed.</h2>
+        <p class="section__desc">A calm editorial story of cafe interiors, barista craft, brewing details, and roasted coffee rituals.</p>
+      </div>
+      <div class="gallery-grid container">
+        <figure class="gallery-item gallery-item--wide">
+          <span class="gallery-label">INTERIOR</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-01.jpg" alt="Warm coffee shop interior with counter and menu boards" loading="lazy"></div>
+          <figcaption>Quiet cafe atmosphere.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">BARISTA</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-02.jpg" alt="Professional barista holding a portafilter behind the cafe counter" loading="lazy"></div>
+          <figcaption>Morning espresso ritual.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">ESPRESSO</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-03.jpg" alt="Espresso machine with cups and coffee accessories" loading="lazy"></div>
+          <figcaption>Tools of the espresso bar.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">LATTE ART</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-04.jpg" alt="Barista presenting a latte with detailed coffee art" loading="lazy"></div>
+          <figcaption>Finishing touches in milk.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">POUR OVER</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-05.jpg" alt="Pour-over coffee brewing in a ceramic dripper" loading="lazy"></div>
+          <figcaption>Pour-over craftsmanship.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">BEANS</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-06.jpg" alt="Roasted coffee beans scattered across a dark surface" loading="lazy"></div>
+          <figcaption>Freshly roasted beans.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">PASTRY</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-07.jpg" alt="Croissant and coffee arranged on a cafe table" loading="lazy"></div>
+          <figcaption>Buttery pastry pairing.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">CAPPUCCINO</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-08.jpg" alt="Cappuccino with latte art on a wooden table" loading="lazy"></div>
+          <figcaption>A warm cafe classic.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <span class="gallery-label">ROASTING</span>
+          <div class="gallery-media"><img src="images/gallery-luxury-09.jpg" alt="Freshly roasted coffee beans pouring from a roasting machine" loading="lazy"></div>
+          <figcaption>Roasting in motion.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-layout">
+        <div class="contact-editorial contact-reveal">
+          <span class="section__eyebrow">ORDER &amp; FEEDBACK</span>
+          <h2>Order Your Perfect Coffee.</h2>
+          <p>Submit online coffee orders, request personalised recommendations, send product enquiries, or share feedback to help us refine Brew Haven Coffee.</p>
+        </div>
+
+        <div class="contact-main contact-reveal">
+          <form class="form compact-contact-form" action="#" method="post">
+            <div class="field-row">
+              <label><span>Full Name</span><input type="text" name="name" placeholder="Your name" required></label>
+              <label><span>Email Address</span><input type="email" name="email" placeholder="you@example.com" required></label>
+            </div>
+            <label>
+              <span>Coffee Selection</span>
+              <select name="coffee-selection" required>
+                <option value="">Choose a drink or product</option>
+                <option>Single Origin Espresso</option>
+                <option>Oat Milk Latte</option>
+                <option>Iced Latte</option>
+                <option>Classic Cappuccino</option>
+                <option>Caramel Macchiato</option>
+                <option>Matcha Latte</option>
+                <option>Cold Brew</option>
+                <option>Pastry or Brunch Item</option>
+                <option>Custom Recommendation</option>
+              </select>
+            </label>
+            <div class="field-row field-row--compact">
+              <label>
+                <span>Order Type</span>
+                <select name="order-type" required>
+                  <option value="">Select type</option>
+                  <option>Online Coffee Order</option>
+                  <option>Personalised Recommendation</option>
+                  <option>Product Enquiry</option>
+                  <option>Feedback or Suggestion</option>
+                  <option>Collaboration Enquiry</option>
+                </select>
+              </label>
+              <label><span>Quantity</span><input type="number" name="quantity" min="1" value="1" required></label>
+            </div>
+            <label><span>Special Requests</span><input type="text" name="special-requests" placeholder="Milk choice, sweetness, delivery notes"></label>
+            <label><span>Feedback or Message</span><textarea name="message" rows="5" placeholder="Tell us what you would like us to prepare or improve." required></textarea></label>
+            <button class="btn btn--primary" type="submit">Submit Order</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo" aria-label="Brew Haven Coffee">
+          <img src="images/logo.svg" alt="Brew Haven Coffee Logo">
+        </div>
+        <div>
+          <h2>Brew Haven Coffee</h2>
+          <p>Modern specialty coffee for thoughtful moments.</p>
+        </div>
+      </div>
+
+      <nav class="footer-column" aria-label="Quick navigation">
+        <h3>Quick Navigation</h3>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#featured">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="footer-column footer-connect">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <span class="social-link" aria-label="Instagram" role="img"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+          <span class="social-link" aria-label="Facebook" role="img"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+          <span class="social-link" aria-label="TikTok" role="img"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span>
+          <span class="social-link social-link--x" aria-label="X Twitter" role="img">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M14.42 10.48 22.18 1.5h-1.84l-6.74 7.8-5.38-7.8H2l8.14 11.8L2 22.7h1.84l7.12-8.23 5.68 8.23h6.22l-8.44-12.22Zm-2.52 2.91-.83-1.18L4.52 2.88h2.82l5.3 7.55.82 1.18 6.88 9.79h-2.82l-5.62-8.01Z" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Brew Haven Coffee.</p>
+      <p>Designed for ICT2215 Website Development Project.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>

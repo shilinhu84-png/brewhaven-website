@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Brew Haven Coffee Logo</title>
+  <desc id="logoDesc">Minimalist specialty coffee cup with steam and a coffee bean in warm brown and black tones.</desc>
+  <circle cx="60" cy="60" r="51" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="3"/>
+  <circle cx="60" cy="60" r="43" fill="none" stroke="#9C6B3F" stroke-width="2" stroke-dasharray="1 8" stroke-linecap="round"/>
+  <path d="M37 61h43v9c0 11.046-8.954 20-20 20h-3c-11.046 0-20-8.954-20-20v-9Z" fill="none" stroke="#1E1E1E" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M80 66h6c5.523 0 10 4.253 10 9.5S91.523 85 86 85h-7" fill="none" stroke="#1E1E1E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M34 61h49" fill="none" stroke="#9C6B3F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M48 45c-4-5-1-11 4-14" fill="none" stroke="#9C6B3F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M61 46c-4-6-1-13 5-17" fill="none" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M71 78c-7 2-15-1-18-8 7-2 15 1 18 8Z" fill="none" stroke="#9C6B3F" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M54 70c5 1 10 4 14 8" fill="none" stroke="#9C6B3F" stroke-width="3" stroke-linecap="round"/>
+</svg>
