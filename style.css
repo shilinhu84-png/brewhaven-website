@@ -48,8 +48,12 @@ video {
 }
 
 video {
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .container {
@@ -437,14 +441,18 @@ video {
   overflow: hidden;
   box-shadow: 0 24px 65px rgba(30, 30, 30, 0.08);
   max-width: 100%;
+  aspect-ratio: 4 / 5;
 }
 
 .about-image video {
   width: 100%;
+  height: 100%;
   aspect-ratio: 4 / 5;
   display: block;
   border: 0;
   object-fit: cover;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .about-copy {
@@ -2629,10 +2637,19 @@ h3,
     overflow-x: hidden;
   }
 
-  img,
-  video {
+  img {
     max-width: 100%;
     height: auto;
+  }
+
+  video {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 
   .container,
@@ -2835,7 +2852,7 @@ h3,
   }
 
   .about-image video {
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 

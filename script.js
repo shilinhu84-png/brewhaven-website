@@ -11,7 +11,7 @@ videos.forEach((video) => {
   video.setAttribute('muted', '');
   video.setAttribute('loop', '');
   video.setAttribute('playsinline', '');
-  video.setAttribute('preload', 'auto');
+  video.setAttribute('preload', 'metadata');
   video.defaultMuted = true;
   video.muted = true;
   video.playsInline = true;
@@ -57,7 +57,6 @@ window.addEventListener('scroll', () => {
 });
 
 const aboutSection = document.querySelector('.about');
-const aboutVideo = document.querySelector('#about video[data-playlist]');
 const aboutObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -71,17 +70,6 @@ const aboutObserver = new IntersectionObserver((entries) => {
 
 if (aboutSection) {
   aboutObserver.observe(aboutSection);
-}
-
-if (aboutVideo) {
-  const playlist = aboutVideo.dataset.playlist.split('|').filter(Boolean);
-  let currentVideo = 0;
-
-  aboutVideo.addEventListener('ended', () => {
-    currentVideo = (currentVideo + 1) % playlist.length;
-    aboutVideo.src = playlist[currentVideo];
-    aboutVideo.play().catch(() => {});
-  });
 }
 
 const gallerySection = document.querySelector('.gallery');
